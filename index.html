@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/spark-widget.css">
+    <script type="text/javascript" src="js/vendor/spark-browser-bundle.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/modernizr.js"></script>    
+    <script type="text/javascript" src="js/spark-widget.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+        <h3>Create a button to turn a Spark Core LED on or off!</h3>
+      </div>
+    </div>
+    <form class="spark-form" onsubmit="SparkForm.submit(event)">
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Name of Device
+            <input name="Name" type="text" placeholder="Name (i.e. Bubble)"/>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Pin Number
+            <input name="Pin" type="text" placeholder="Pin (i.e. D7)"/>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Turn on or off?
+            <select name="on/off">
+              <option value="HIGH">On</option>
+              <option value="LOW">Off</option> 
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <input type="submit" class="button submit-spark-form" value="Generate Button"/>
+        </div>
+      </div>
+    </form>
+    <script>
+    </script>
+  </body>
+</html>
